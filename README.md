@@ -1,39 +1,48 @@
-## React
+## Student Portal Project Overview
 
-This is a simple React application. This application serves as a basic template for a react applications.  
-This project is bootstrapped with [Vite](https://vitejs.dev/guide/).
+The **Student Portal** is a React-based web application designed to provide students with a simple platform to **explore courses, view course details, log in, and manage their student dashboard**.
 
-## How to run
+The application contains a **Home page, Courses page, Course Details page, Login page, and Student Dashboard**. After logging in, students can view their learning progress, profile information, and notification settings.
 
-1. Before running the application, make sure all dependencies are installed. To install dependencies, run following command in terminal:
+### Main Modules
 
-   ```sh
-   npm install
-   ```
+1. **Home** – Provides a welcome message and access to available courses.
+2. **Courses** – Displays courses such as React, JavaScript, Python, and Java.
+3. **Course Details** – Shows the selected course information, duration, and topics.
+4. **Login** – Provides access to the student dashboard.
+5. **Dashboard** – Contains:
 
-2. Once dependencies are installed, run the following command to start the application:
+   * **Overview** – Enrolled courses, progress, and assignments.
+   * **Profile** – Student name, email, course, and year.
+   * **Settings** – Email notifications and course reminders.
+6. **Logout** – Allows the student to exit the dashboard.
 
-   ```sh
-   npm run dev
-   ```
+### Technologies Used
 
-3. Refresh the URL in simple browser to see the output.
+* **React.js** – For building the user interface
+* **JavaScript** – For functionality and page navigation
+* **CSS** – For styling and responsive design
+* **Vite** – For running and developing the React application
 
-## FAQs & Debugging
+### Project Flow
 
-### 1. I do not see browser in my workspace
+```text
+Home
+  ↓
+Courses
+  ↓
+Course Details
+  ↓
+Login
+  ↓
+Student Dashboard
+  ├── Overview
+  ├── Profile
+  └── Settings
+  ↓
+Logout
+```
 
-Studio will automatically open the app in a new browser tab. If not, you can use the following steps to open the simple browser
+### Short Version for Viva
 
-1. From VS Code command pallette(`Ctrl/Cmd + Shift + P`), run **Studio Manager: SimpleBrowser Default URL** command. This will open the app in a new browser tab.
-
-2. Your app runs on hosted env which can be accessed using host id, port provided in file **.vscode/.studio/studio-env.json**. Use values to create the URL as follows:
-   `https://<STUDIO_HOST_ID>-3000.<STUDIO_DOMAIN>`
-
-### 2. Getting `vite: not found` error
-
-This means node_modules are missing in your workspace, please refer the 'How to run' section and make sure you have followed the steps in sequence
-
-### 3. Can I use create-react-app instead Vite?
-
-Yes, you can use create-react-app instead Vite, the default workspace is loaded with Vite setup, you can remove the Vite dependencies, add create-react-app dependencies and update the scripts to start using create-react-app.
+> **“My project is a Student Portal developed using React.js, JavaScript, CSS, and Vite. It allows students to explore courses, view course details, log in, and manage their dashboard. The dashboard provides an overview of enrolled courses and progress, along with profile and settings sections. The main goal of the project is to provide a simple and user-friendly platform for students to manage their learning activities.”**
