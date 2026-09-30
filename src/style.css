@@ -1,0 +1,623 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #f4f6f8;
+
+  color: #202124;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+  height: 74px;
+
+  background: #1d2939;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 48px;
+}
+
+
+.logo {
+
+  color: white;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+.nav-link {
+
+  color: #f1f1f1;
+
+  text-decoration: none;
+
+  padding: 10px 16px;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+}
+
+
+.nav-link.active {
+
+  background: white;
+
+  color: #1d2939;
+
+  font-weight: 700;
+}
+
+
+.logout-btn {
+
+  border: none;
+
+  background: #e52323;
+
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-btn {
+
+  display: inline-block;
+
+  border: none;
+
+  background: #2864e8;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 11px 20px;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+.primary-btn:hover {
+
+  background: #1f56ce;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home-page {
+
+  min-height: calc(100vh - 74px);
+
+  padding-top: 45px;
+}
+
+
+.hero-card {
+
+  width: 68%;
+
+  max-width: 1040px;
+
+  min-height: 347px;
+
+  margin: 0 auto;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 6px 22px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.hero-card h1 {
+
+  font-size: 42px;
+
+  margin: 0 0 16px;
+}
+
+
+.hero-card p {
+
+  color: #5f6368;
+
+  font-size: 18px;
+
+  margin: 0 0 30px;
+}
+
+
+/* =========================
+   COURSES
+========================= */
+
+.page-container {
+
+  width: 68%;
+
+  max-width: 1040px;
+
+  margin: 70px auto;
+}
+
+
+.page-title {
+
+  font-size: 34px;
+
+  margin: 0 0 28px;
+}
+
+
+.course-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 24px;
+}
+
+
+.course-card {
+
+  background: white;
+
+  min-height: 220px;
+
+  padding: 25px;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.course-card h2 {
+
+  margin: 0 0 22px;
+
+  font-size: 25px;
+}
+
+
+.course-card p {
+
+  color: #5f6368;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   COURSE DETAILS
+========================= */
+
+.center-page {
+
+  min-height: calc(100vh - 74px);
+
+  padding-top: 49px;
+}
+
+
+.details-card {
+
+  width: 46%;
+
+  max-width: 700px;
+
+  min-height: 438px;
+
+  margin: 0 auto;
+
+  padding: 34px;
+
+  background: white;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.details-card h1 {
+
+  font-size: 34px;
+
+  margin: 20px 0;
+}
+
+
+.details-card h2 {
+
+  font-size: 25px;
+
+  margin: 0 0 18px;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-card {
+
+  width: 420px;
+
+  min-height: 224px;
+
+  margin: 30px auto;
+
+  padding: 35px;
+
+  background: white;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.login-card h1 {
+
+  font-size: 34px;
+
+  margin: 20px 0;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-page {
+
+  width: 68%;
+
+  max-width: 1040px;
+
+  margin: 68px auto;
+}
+
+
+.dashboard-page > h1 {
+
+  font-size: 34px;
+
+  margin: 0 0 14px;
+}
+
+
+.subtitle {
+
+  color: #5f6368;
+
+  font-size: 16px;
+
+  margin: 0 0 56px;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.dashboard-tabs {
+
+  display: flex;
+
+  gap: 26px;
+
+  border-bottom: 1px solid #d8dadd;
+
+  margin-bottom: 24px;
+}
+
+
+.tab {
+
+  background: transparent;
+
+  border: none;
+
+  padding: 12px 4px;
+
+  font-size: 16px;
+
+  color: #5f6368;
+
+  cursor: pointer;
+}
+
+
+.active-tab {
+
+  color: #2864e8;
+
+  font-weight: 700;
+
+  border-bottom: 2px solid #2864e8;
+}
+
+
+/* =========================
+   DASHBOARD CARD
+========================= */
+
+.dashboard-card {
+
+  background: white;
+
+  min-height: 326px;
+
+  padding: 30px;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.dashboard-card h2 {
+
+  font-size: 26px;
+
+  margin: 18px 0 26px;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+.stat-box {
+
+  background: #f7f9fb;
+
+  min-height: 135px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.stat-box strong {
+
+  font-size: 30px;
+
+  margin-bottom: 16px;
+}
+
+
+.stat-box span {
+
+  font-size: 16px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-box {
+
+  width: 62%;
+
+  min-height: 198px;
+
+  background: #f7f9fb;
+
+  border-radius: 10px;
+
+  padding: 27px 25px;
+}
+
+
+.profile-box p {
+
+  margin: 12px 0;
+}
+
+
+/* =========================
+   SETTINGS
+========================= */
+
+.settings-box {
+
+  width: 62%;
+
+  min-height: 90px;
+
+  background: #f7f9fb;
+
+  border-radius: 10px;
+
+  padding: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 4px;
+}
+
+
+.settings-box label {
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+
+    padding: 0 20px;
+  }
+
+
+  .page-container,
+  .dashboard-page,
+  .hero-card {
+
+    width: 90%;
+  }
+
+
+  .details-card {
+
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .navbar {
+
+    height: auto;
+
+    min-height: 74px;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 15px;
+  }
+
+
+  .nav-links {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+
+  .course-grid,
+  .stats-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .hero-card {
+
+    padding: 30px 20px;
+  }
+
+
+  .hero-card h1 {
+
+    font-size: 32px;
+  }
+
+
+  .details-card,
+  .login-card {
+
+    width: 90%;
+  }
+
+
+  .profile-box,
+  .settings-box {
+
+    width: 100%;
+  }
+}
